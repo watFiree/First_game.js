@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Zombie Defense</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        
+            body{
+
+                margin:0;
+                background-color: #292626;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+            }
+            h1{
+                color:white;
+                font-size:3vw;
+                margin-bottom:5vh;
+                margin-top:6vh;
+            }
+            button{
+                background-color:#264F89;
+                border: none;
+                height: 6vh;
+                width: 12vw;
+                color: white;
+                padding: 15px 32px;
+                border-radius:5px;
+                margin-top:5vh;
+                font-size:1vw;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                transition: all 0.2s ease-in-out;
+            }
+
+            button:hover{
+                
+                background-color: #1C3A64;
+                cursor: pointer;
+                
+            }
+            button:focus{
+                outline: none;
+                
+            }
+
+
+            p{
+                color:white;
+                font-size:1.2vw;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            canvas{
+                background-color: white;
+                position: absolute;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="rAF.js"></script>
+        <script src="modernizr-2.6.2.min.js"></script>
+        <script src="Game.js"></script>
+        <script src="Hero.js"></script>
+        <script src="Bullet.js"></script>
+        <script src="Zombie.js"></script>
+        <script src="Items.js"></script>
+    </body>
+</html>
